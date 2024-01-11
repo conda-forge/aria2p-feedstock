@@ -1,5 +1,5 @@
 {% set name = "aria2p" %}
-{% set version = "0.11.3" %}
+{% set version = "0.12.0" %}
 
 package:
   name: {{ name|lower }}
@@ -7,7 +7,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/aria2p-{{ version }}.tar.gz
-  sha256: 517667f7b38adde8826908d6b6fbbf862a3066a56415e0fd2fd3ba61dc9cd19d
+  sha256: ac42d2b67b819994df75c79be461ee6adf71be8616105275bce7e8794372c0b7
 
 build:
   entry_points:
