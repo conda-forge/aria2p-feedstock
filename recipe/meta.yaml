@@ -29,6 +29,7 @@ requirements:
     - requests >=2.19
     - toml >=0.10
     - websocket-client >=0.58
+    - tomli>=2.0 # [py<=310]
 
 test:
   imports:
