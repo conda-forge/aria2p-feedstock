@@ -27,9 +27,9 @@ requirements:
     - platformdirs >=4.2
     - loguru >=0.5
     - requests >=2.19
-    - toml >=0.10
     - websocket-client >=0.58
-    - tomli>=2.0 # [py<=310]
+    # remove tomli after python_min >=3.11
+    - tomli >=2.0 
 
 test:
   imports:
