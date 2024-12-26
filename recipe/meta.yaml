@@ -18,13 +18,13 @@ build:
 
 requirements:
   host:
-    - python >=3.7
+    - python {{ python_min }}
     - pdm-backend
     - pdm-pep517
     - pip
   run:
-    - python >=3.7
-    - appdirs >=1.4
+    - python >={{ python_min }}
+    - platformdirs >=4.2
     - loguru >=0.5
     - requests >=2.19
     - toml >=0.10
@@ -38,6 +38,7 @@ test:
     - aria2p --help
   requires:
     - pip
+    - python {{ python_min }}
 
 about:
   home: https://pypi.org/project/aria2p/
