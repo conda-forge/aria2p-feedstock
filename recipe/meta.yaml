@@ -1,13 +1,13 @@
 {% set name = "aria2p" %}
-{% set version = "0.12.1" %}
+{% set version = "0.12.3" %}
 
 package:
   name: {{ name|lower }}
   version: {{ version }}
 
 source:
-  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/aria2p-{{ version }}.tar.gz
-  sha256: 1521ccba4a4bb164a023f4c4213513dc3e6f47b91927f5e49dd50678da8c1294
+  url: https://files.pythonhosted.org/packages/source/{{ name[0] }}/{{ name }}/aria2p-{{ version }}.tar.gz
+  sha256: c9d505ae6363092b5ea558160b408677adba876c89a50f9129e7505965e56d00
 
 build:
   entry_points:
@@ -29,7 +29,7 @@ requirements:
     - requests >=2.19
     - websocket-client >=0.58
     # remove tomli after python_min >=3.11
-    - tomli >=2.0 
+    - tomli >=2.0
 
 test:
   imports:
